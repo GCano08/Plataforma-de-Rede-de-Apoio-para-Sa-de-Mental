@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Agendamento</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <style>
+        #body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            border: 6px solid #004aad;
+            border-radius: 15px;
+            padding: 30px;
+            width: 450px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #db9ce7;
+            margin-bottom: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 2px solid #db9ce7;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #004aad;
+        }
+
+        button {
+            background-color: #db9ce7;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c478d6;
+        }
+        footer{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../Imgs/logo.png " alt="" width="70px" style="border-radius: 80px;">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Agendamento.html">Agendamento</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="InscVoluntarios.html">Ser Voluntário</a></li>
+                <li><a href="FAQs.html">Sobre</a></li>
+                <li><a href="../Colaboradores/pagina-colaboradores.html">Nossa Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="body">
+    <div class="container">
+        <h1>Agendamento de Sessão</h1>
+        <form>
+            <label for="nome">Nome do Participante:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="voluntario">Voluntário:</label>
+            <input type="text" id="voluntario" name="voluntario" placeholder="Nome do voluntário" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Horário:</label>
+            <input type="text" id="hora" name="hora" placeholder="Digite o horário (ex: 14:00)" required>
+
+            <label for="tipo">Tipo de Atendimento:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione...</option>
+                <option value="individual">Atendimento Individual</option>
+                <option value="grupo">Grupo de Apoio</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Conecte-se</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@apoioemocional.org</p>
+                <p>Telefone: (18) 99711-0804</p>
+            </div>
+            <div class="footer-section">
+                <h4>Sobre a Plataforma</h4>
+                <p>Promovemos saúde mental com empatia, criando uma rede de apoio emocional voluntária para quem precisa ser ouvido.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

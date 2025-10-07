@@ -1,0 +1,271 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografia e cores principais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004aad;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    background-color: #db96e7;
+    color: #004aad;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #004aad;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #003080;
+}
+
+/* Missão */
+.missao {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.missao h2 {
+    color: #004aad;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.missao p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    font-size: 0.95em;
+}
+
+header.cabecalho {
+  background-color: #C6E5F3;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px  rgba(0,0,0,0.1);
+}
+
+nav.menu-principal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 30px;
+}
+
+nav.menu-principal a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav.menu-principal a:hover {
+  color: #F9CAD2;
+}
+
+footer.rodape {
+  background-color: #C6E5F3;
+  padding: 20px 0;
+  text-align: center;
+  color: #333333;
+  font-size: 12px;
+  box-shadow: 0 -2px 6px  rgba(0,0,0,0.1);
+  margin-top: 24.5vh;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+/* ===========================
+   SEÇÃO DE VOLUNTÁRIOS
+=========================== */
+.voluntarios {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.voluntarios .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.voluntarios h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.voluntarios .intro {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.voluntarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.voluntario-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+.voluntario-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.voluntario-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.voluntario-card h3 {
+    margin: 15px 0 8px;
+    color: #222;
+    font-size: 1.2rem;
+}
+
+.voluntario-card p {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #3a7bd5;
+}

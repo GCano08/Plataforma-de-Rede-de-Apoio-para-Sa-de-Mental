@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog/Artigos - Conteúdo Educativo</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <style>
+        #body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 30px 0;
+        }
+
+        .blog-container {
+            background-color: white;
+            border: 6px solid #004aad;
+            /* Borda principal azul */
+            border-radius: 15px;
+            padding: 30px;
+            width: 800px;
+            /* Largura maior para melhor leitura de artigos */
+            max-width: 95%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #004aad;
+            /* Título principal azul */
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #db9ce7;
+            padding-bottom: 15px;
+        }
+
+        /* Estilo para a lista de artigos */
+        .artigo-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            /* Espaçamento entre os artigos */
+        }
+
+        .artigo-card {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .artigo-card:hover {
+            transform: translateY(-5px);
+            /* Efeito sutil ao passar o mouse */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .artigo-card h2 {
+            color: #db9ce7;
+            /* Título do artigo em roxo */
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .artigo-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .artigo-card .tags {
+            font-size: 14px;
+            color: #004aad;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .ler-mais {
+            display: inline-block;
+            background-color: #004aad;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .ler-mais:hover {
+            background-color: #003780;
+        }
+        footer{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../Imgs/logo.png " alt="" width="70px" style="border-radius: 80px;">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="Agendamento.html">Agendamento</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="InscVoluntarios.html">Ser Voluntário</a></li>
+                <li><a href="FAQs.html">Sobre</a></li>
+                <li><a href="../Colaboradores/pagina-colaboradores.html">Nossa Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="body">
+        <div class="blog-container">
+            <h1>Blog e Artigos: Conteúdo Educativo sobre Saúde Mental</h1>
+
+            <div class="artigo-lista">
+
+                <div class="artigo-card">
+                    <div class="tags">#Autocuidado #BemEstar</div>
+                    <h2>5 Hábitos Simples de Autocuidado para o Dia a Dia</h2>
+                    <p>Descubra como pequenas mudanças na sua rotina podem ter um impacto significativo na sua saúde
+                        mental. Priorize-se com estas dicas práticas.</p>
+                    <a href="artigo-autocuidado.html" class="ler-mais">Ler Artigo Completo</a>
+                </div>
+
+                <div class="artigo-card">
+                    <div class="tags">#Ansiedade #LidandoComEmoções</div>
+                    <h2>Técnicas de Respiração para Controlar a Crise de Ansiedade</h2>
+                    <p>Aprenda exercícios de respiração comprovados que ajudam a acalmar o sistema nervoso em momentos
+                        de pico de estresse e ansiedade.</p>
+                    <a href="artigo-ansiedade.html" class="ler-mais">Ler Artigo Completo</a>
+                </div>
+
+                <div class="artigo-card">
+                    <div class="tags">#Depressão #Apoio</div>
+                    <h2>Como Buscar Ajuda Profissional e Lidar com a Depressão</h2>
+                    <p>Informações essenciais sobre os primeiros passos para buscar apoio terapêutico e desmistificar o
+                        processo de tratamento da depressão.</p>
+                    <a href="artigo-depressao.html" class="ler-mais">Ler Artigo Completo</a>
+                </div>
+
+                <div class="artigo-card">
+                    <div class="tags">#Voluntariado #SaúdeMental</div>
+                    <h2>O Impacto Positivo do Voluntariado na sua Própria Saúde Mental</h2>
+                    <p>Exploramos como ajudar o próximo pode ser uma ferramenta poderosa de bem-estar, propósito e
+                        conexão social para os voluntários.</p>
+                    <a href="artigo-voluntariado.html" class="ler-mais">Ler Artigo Completo</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Conecte-se</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@apoioemocional.org</p>
+                <p>Telefone: (18) 99711-0804</p>
+            </div>
+            <div class="footer-section">
+                <h4>Sobre a Plataforma</h4>
+                <p>Promovemos saúde mental com empatia, criando uma rede de apoio emocional voluntária para quem precisa
+                    ser ouvido.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

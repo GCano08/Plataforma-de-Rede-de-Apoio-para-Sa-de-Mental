@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — Guilherme Luiz Araujo Ribeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div>
+        <div style="font-weight:700">Guilherme Luiz Araujo Ribeiro</div>
+        <div style="font-size:12px;color:var(--muted)">Portfólio One Page</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#edu">Formação</a>
+      <a href="#projects">Projetos</a>
+      <a href="#hobby">Lazer</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="card intro">
+        <h1>Olá — eu sou <span style="color:var(--accent)"> Guilherme Luiz Araujo Ribeiro</span></h1>
+        <div class="tags" aria-hidden="true">
+          <div class="tag">C</div>
+          <div class="tag">HTML</div>
+          <div class="tag">CSS</div>
+          <div class="tag">python</div>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:18px">
+          <a href="#projects" class="btn-primary">Ver Projetos</a>
+          <a href="#contact" class="btn-outline">Contato</a>
+        </div>
+
+        <div style=<strong class="muted">Em formação — busca aprendizado contínuo — aberto para oportunidades.</strong></div>
+
+      </div>
+
+      <aside class="card photo" aria-label="Foto de capa">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Sem_imagem.jpg" alt="Foto de capa">
+      </aside>
+    </section>
+
+    <section class="grid-2">
+      <div>
+        <section id="about" class="card about">
+          <h2 class="section-title">Sobre mim</h2>
+          <p>Tenho 20 anos, moro no municipio de sandovalina, estou excercendo estagio no Paço munipal da minha cidade. Atualmente estou cursando bacharelado em sistema de informação na Universidade do Oeste Paulista (Unoeste).
+            Após o termino do Bacharel, penso em cursar na mesma Instituição, o curso tecnico de Desing grafico a fim de aumentar meu repertório pessoal. 
+
+            
+          </p>
+          <h3 style="margin-top:18px">Habilidades</h3>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <div class="tag">Ingles Basico Nivel - A2</div>
+            <div class="tag">conhecimento em Hardware</div>
+            <div class="tag">Pensamento criativo</div>
+            <div class="tag">Adaptabilidade</div>
+          </div>
+        </section>
+
+        <section id="edu" class="card" style="margin-top:18px">
+          <h2 class="section-title">Formação & Cursos</h2>
+
+          <h3 style="margin-top:12px">Cursando</h3>
+          <table aria-label="Formação acadêmica" aria-label="Cursos">
+            <thead>
+              <tr><th>Período</th><th>Instituição</th><th>Curso</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Noturno</td><td>Universidade do Oeste Paulista - Unoeste</td><td>Bacharelado - Sistema de infomação</td></tr>
+            </tbody>
+ 
+          </table>
+        </section>
+        <section id="projects" class="card" style="margin-top:18px">
+          <h2 class="section-title">Projetos Recentes</h2>
+          <div class="projects">
+            <article class="project">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Projeto 2">
+              <h3>Projeto — Título</h3>
+              <p class="body">pequeno projeto de formatação feito durante as aulas. Link: <a href="http://127.0.0.1:5501/formatacao/index.html" style="color:var(--accent)">ver</a></p>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+
+      <aside>
+        <section class="card">
+          <h2 class="section-title">Contato</h2>
+          <div class="contact-list" id="contact">
+            <a href="#">✉️ Email Pessoal - hguylherme0@gmail.com</a>
+            <a href="#">📚 Email instucional -  guilherme_araujo@unoeste.edu.br</a>
+            <a href="#">💼 LinkedIn — em breve</a>
+            <a href="#">🐙 GitHub — em breve</a>
+          </div>
+
+
+        <section class="card" style="margin-top:18px">
+          <h2 class="section-title">Lazer & Interesses</h2>
+          <table>
+            <tbody>
+              <tr><th>Jogos</th><td class="body"> Rainbow Six Siege, League of Legends, Elden Ring.</td></tr>
+
+            </tbody>
+          </table>
+        </section>
+
+      </aside>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="body">© <span id="year"></span> Guilherme Luiz — Template One Page</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

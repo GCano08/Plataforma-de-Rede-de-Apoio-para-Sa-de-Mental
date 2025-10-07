@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colaboradores</title>
+  <link rel="stylesheet" href="../Style/style.css">
+  <style>
+    body {
+      background: linear-gradient(180deg, #ffffff 0%, #F3F8FB 50%, #FDE7EB 100%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .titulo-pagina {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 30px;
+      color: #F9CAD2;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .container-de-colaboradores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .cartao-colaborador {
+      background-color: #FDE7EB;
+      border: 2px solid #F9CAD2;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      transition: 0.3s;
+    }
+
+    .cartao-colaborador:hover {
+      background-color: #F9CAD2;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      color: #ffffff;
+      transform: translateY(-5px);
+    }
+
+    .cartao-colaborador img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #C6E5F3;
+    }
+
+    .cartao-colaborador h3 {
+      margin: 10px 0 5px;
+    }
+
+    .cartao-colaborador p {
+      font-size: 15px;
+      color: #555555;
+    }
+
+    .botoes a {
+      display: inline-block;
+      margin: 8px;
+      padding: 8px 14px;
+      background-color: #F9CAD2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 19px;
+      transition: 0.3s;
+    }
+
+    .botoes a:hover {
+      background-color: #e6b9c1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="../Imgs/logo.png " alt="" width="70px" style="border-radius: 80px;">
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../Views/Agendamento.html">Agendamento</a></li>
+        <li><a href="../Views/Blogs.html">Blogs</a></li>
+        <li><a href="../Views/InscVoluntarios.html">Ser Voluntário</a></li>
+        <li><a href="../Views/FAQs.html">Sobre</a></li>
+        <li><a href="#">Nossa Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo-pagina">Colaboradores</h1>
+
+    <section class="container-de-colaboradores">
+      <div class="cartao-colaborador">
+        <img src="Portfólio-Guilherme/Foto.jfif" alt="Foto do Guilherme">
+        <h3>Guilherme Luiz</h3>
+        <p>RA:.</p>
+        <div class="botoes">
+          <a href="Portfólio-Guilherme/portifolio.html" target="_blank">Ver portfólio</a>
+        </div>
+      </div>
+
+      <div class="cartao-colaborador">
+        <img src="Gustavo/gustavo.png" alt="Foto do Gustavo">
+        <h3>Gustavo Cano</h3>
+        <p>RA: 262516063</p>
+        <div class="botoes">
+          <a href="Gustavo/gustavo.html" target="_blank">Ver portfólio</a>
+        </div>
+      </div>
+
+      <div class="cartao-colaborador">
+        <img src="Portfólio-Heitor\image.png" alt="Foto do Heitor">
+        <h3>Heitor da Cruz</h3>
+        <p>RA:262515334</p>
+        <div class="botoes">
+          <a href="Portfólio-Heitor/portifolii_onepage/projeto/index.html" target="_blank">Ver portfólio</a>
+        </div>
+      </div>
+
+      <div class="cartao-colaborador">
+        <img src="portifólio-miguel/foto-miguel.jpeg" alt="Foto do Miguel">
+        <h3>Miguel Hirata</h3>
+        <p>RA:262516268</p>
+        <div class="botoes">
+          <a href="portifólio-miguel/tela início.html" target="_blank">Ver portfólio</a>
+        </div>
+      </div>
+
+      <div class="cartao-colaborador">
+        <img src="Portfolio-vini/compressed_20250129_152618~3.jpg" alt="Foto do Vinícius">
+        <h3>Vinícius Santana</h3>
+        <p>RA: 262515075</p>
+        <div class="botoes">
+          <a href="Portfolio-vini/portfolio.html" target="_blank">Ver portfólio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Conecte-se</h4>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>Email: contato@apoioemocional.org</p>
+        <p>Telefone: (18) 99711-0804</p>
+      </div>
+      <div class="footer-section">
+        <h4>Sobre a Plataforma</h4>
+        <p>Promovemos saúde mental com empatia, criando uma rede de apoio emocional voluntária para quem precisa ser
+          ouvido.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
